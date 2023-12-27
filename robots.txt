@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://timani.co.za/al-folio/sitemap.xml
+Sitemap: https://timani.co.za/sitemap.xml
