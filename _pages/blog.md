@@ -4,7 +4,7 @@ permalink: /blog/
 title: blog
 nav: true
 nav_order: 1
-show_featured_posts: false
+show_featured_posts: 0
 pagination:
   enabled: true
   collection: posts
@@ -55,7 +55,7 @@ pagination:
   </div>
   {% endif %}
 
-  {% assign featured_posts = site.posts | where: "featured", "true" and show_featured_posts %}
+  {% assign featured_posts = site.posts | where: "featured", "true" and show_featured_posts > 0 %}
   {% if featured_posts.size > 0 %}
     <br>
     <div class="container featured-posts">
